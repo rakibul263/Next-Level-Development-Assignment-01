@@ -27,3 +27,10 @@ function checkType(input: StringOrNumber) {
 }
 checkType("Hello");
 checkType(42);
+
+// Problem - 04
+const getProperty = <T, K extends keyof T>(obj: T, key: K): void => {
+  console.log(obj[key]);
+};
+const user = { id: 1, name: "John Doe", age: 21 };
+getProperty(user, "name");
