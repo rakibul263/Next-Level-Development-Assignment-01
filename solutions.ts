@@ -15,3 +15,15 @@ function reverseString(input: string) {
 }
 
 reverseString("typescript");
+
+// Problem - 03
+type StringOrNumber = string | number;
+function checkType(input: StringOrNumber) {
+  if (typeof input === "number") {
+    console.log("Number");
+  } else if (typeof input === "string") {
+    console.log("String");
+  }
+}
+checkType("Hello");
+checkType(42);
